@@ -10,7 +10,9 @@
 PropTypes is a way for us to enforce that components receive the right props in the right form. Basically, it's kind of
 a developer-oriented validation: it catches errors when you pass the wrong stuff into a component, and warns you about
 it. These warnings only show up in development versions of React — this stuff isn't checked in production versions
-because of the overhead (and throwing the errors in production would be too little too late anyway).
+because of the overhead (and throwing the errors in production would be too little too late anyway). This helps with
+code modularity and reuse, as running the code in development will clearly indicate if a component is being used in a
+wrong way. This is especially helpful for working with multiple developers and big codebases.
 
 A more concrete example: let's say we have some kind of profile card. The card uses several props: `firstName`,
 `lastName`, `likes`, `gender`, and so on. It'd be great if we could validate our component to make sure the `firstName`
