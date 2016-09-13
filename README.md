@@ -1,10 +1,13 @@
 # React PropTypes
 
+## Overview
+
+We'll cover propTypes and why they're a handy tool when working with components. 
+
 ## Objectives
-1. Describe why propTypes are a handy tool
-2. Describe how to use `PropTypes` declarations
-3. Explain when to use `isRequired`
-4. Explain when to use `PropTypes.object` instead of `PropTypes.shape()`
+1. Describe how to use `PropTypes` declarations
+2. Explain when to use `isRequired`
+3. Distinguish hen to use `PropTypes.object` instead of `PropTypes.shape()`
 
 ## What are PropTypes?
 PropTypes is a way for us to enforce that components receive the right props in the right form. Basically, it's kind of
