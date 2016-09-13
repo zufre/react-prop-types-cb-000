@@ -135,7 +135,7 @@ Order.propTypes = {
 We've now fully validated all of the props that our `<Order />` component cares about. Now we can be sure that the right
 data gets passed in, and if not, we can change things accordingly!
 
-## Defining shape for object PropTypes
+## Defining "shape" for object PropTypes
 Something feels a little off, though... We told the `orderInfo` prop to expect an object, but can we be more specific?
 We don't just need any object, we want an object with the properties (`customerName` and `orderedAt`) that we care
 about!
