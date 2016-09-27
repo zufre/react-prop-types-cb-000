@@ -7,7 +7,7 @@ We'll cover propTypes and why they're a handy tool when working with components.
 ## Objectives
 1. Describe how to use `PropTypes` declarations
 2. Explain when to use `isRequired`
-3. Distinguish hen to use `PropTypes.object` instead of `PropTypes.shape()`
+3. Distinguish when to use `PropTypes.object` instead of `PropTypes.shape()`
 
 ## What are PropTypes?
 PropTypes is a way for us to enforce that components receive the right props in the right form. Basically, it's kind of a developer-oriented validation: it catches errors when you pass the wrong stuff into a component, and warns you about it. These warnings only show up in development versions of React — this stuff isn't checked in production versions because of the overhead (and throwing the errors in production would be too little too late anyway). This helps with code modularity and reuse, as running the code in development will clearly indicate if a component is being used in a wrong way. This is especially helpful for working with multiple developers and big codebases.
@@ -142,3 +142,5 @@ In this lesson, we've covered the basics of using PropTypes. There's much more v
 ## Resources
 - [PropTypes reference](https://facebook.github.io/react/docs/reusable-components.html#prop-validation)
 
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-prop-types'>propTypes</a> on Learn.co and start learning to code for free.</p>
