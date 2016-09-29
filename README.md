@@ -73,7 +73,7 @@ Order.propTypes = {
 We just told our component to expect the `cone` prop to be a boolean. There are a couple of important things to note here:
  
 - Notice the capitalization: the property on the component class is always called `propTypes`, while the React prop types you assign to them are capitalized as `PropTypes`. This is easy to mess up, so if our propTypes don't validate, that's the first place we should look!
-- Some types are not called what you'd expect them to be: a boolean is `bool`, a function is `func`, and so on. Using the [reference on PropTypes][proptypes-reference] is probably a good idea if you're just starting out with this stuff.
+- Some types are not called what you'd expect them to be: a boolean is `bool`, a function is `func`, and so on. Using the [reference on PropTypes](https://facebook.github.io/react/docs/reusable-components.html#prop-validation) is probably a good idea if you're just starting out with this stuff.
 
 Let's add our second prop, the `size` one, which expects a string:
 
