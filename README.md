@@ -46,9 +46,18 @@ class Order extends React.Component {
 }
 ```
 
-Now that we know what our component will look like, let's add our default props (see the props list above). Afterwards, we'll start adding PropTypes to validate all the props being passed in. We do so by setting the `propTypes` property (which is an object) on the `Order` class:
+Now that we know what our component will look like, let's add our default props (see the props list above). Next we need to add the PropTypes node package to our node_modules folder so that we can access `PropTypes`:
+
+```
+npm install prop-types
+```
+
+Afterwards, we'll start adding PropTypes to validate all the props being passed in. We do so by setting the `propTypes` property (which is an object) on the `Order` class and import PropTypes at the top of our file.
 
 ```js
+import React from 'react';
+import PropTypes from 'prop-types';
+
 class Order extends React.Component {
   
   render() {
@@ -68,7 +77,7 @@ Let's add our first PropType, the `cone` one:
 
 ```js
 Order.propTypes = {
-  cone: React.PropTypes.bool
+  cone: PropTypes.bool
 };
 ```
 
@@ -81,8 +90,8 @@ Let's add our second prop, the `size` one, which expects a string:
 
 ```js
 Order.propTypes = {
-  cone: React.PropTypes.bool,
-  size: React.PropTypes.string
+  cone: PropTypes.bool,
+  size: PropTypes.string
 };
 ```
 
@@ -90,9 +99,9 @@ Next up is our scoops array:
 
 ```js
 Order.propTypes = {
-  cone: React.PropTypes.bool,
-  size: React.PropTypes.string,
-  scoops: React.PropTypes.array.isRequired
+  cone: PropTypes.bool,
+  size: PropTypes.string,
+  scoops: PropTypes.array.isRequired
 };
 ```
 
@@ -100,9 +109,9 @@ See the `isRequired` there? That makes sure the `scoops` prop is provided when r
 
 ```js
 Order.propTypes = {
-  cone: React.PropTypes.bool,
-  size: React.PropTypes.string,
-  scoops: React.PropTypes.arrayOf(React.PropTypes.string).isRequired
+  cone: PropTypes.bool,
+  size: PropTypes.string,
+  scoops: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 ```
 
@@ -126,12 +135,12 @@ Good news: we can! Using `React.PropTypes.shape`, we can tell our component to e
 
 ```js
 Order.propTypes = {
-  cone: React.PropTypes.bool,
-  size: React.PropTypes.string,
-  scoops: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
-  orderInfo: React.PropTypes.shape({
-    customerName: React.PropTypes.string.isRequired,
-    orderedAt: React.PropTypes.number.isRequired // We're using UNIX timestamps here
+  cone: PropTypes.bool,
+  size: PropTypes.string,
+  scoops: PropTypes.arrayOf(PropTypes.string).isRequired,
+  orderInfo: PropTypes.shape({
+    customerName: PropTypes.string.isRequired,
+    orderedAt: PropTypes.number.isRequired // We're using UNIX timestamps here
   }).isRequired
 };
 ```
