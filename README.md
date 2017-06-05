@@ -30,6 +30,7 @@ Our `<Order />` component would roughly look like this:
 
 ```js
 class Order extends React.Component {
+
   render() {
     return (
       <div className="order">
@@ -49,6 +50,7 @@ Now that we know what our component will look like, let's add our default props 
 
 ```js
 class Order extends React.Component {
+  
   render() {
     // ...
   }
