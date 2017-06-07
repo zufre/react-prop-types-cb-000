@@ -119,10 +119,10 @@ That's better! Next, let's finish up by adding the last prop, the `orderInfo`:
 
 ```js
 Order.propTypes = {
-  cone: React.PropTypes.bool,
-  size: React.PropTypes.string,
-  scoops: React.PropTypes.arrayOf(React.PropTypes.string).isRequired,
-  orderInfo: React.PropTypes.object.isRequired
+  cone: PropTypes.bool,
+  size: PropTypes.string,
+  scoops: PropTypes.arrayOf(PropTypes.string).isRequired,
+  orderInfo: PropTypes.object.isRequired
 };
 ```
 
