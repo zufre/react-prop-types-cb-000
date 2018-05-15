@@ -148,7 +148,7 @@ Order.propTypes = {
 Using the `shape` PropType, we can further validate our component's props to be even more specific, and to be _doubly_ sure that we're getting the right data. Great success!
 
 ## Advanced usage of PropTypes
-In this lesson, we've covered the basics of using PropTypes. There's much more validation you can do with it though, including writing your own prop validators. For example, we could write a function that validates the `scoops` prop to make sure that it has at least one scoop, and has flavors that we actually have in our store. Give it a try if you're feeling adventurous! Be sure to check out the [reference on PropTypes](https://facebook.github.io/react/docs/reusable-components.html#prop-validation) to guide you along the way.
+In this lesson, we've covered the basics of using PropTypes. There's much more validation you can do with it though, including writing your own prop validators. For example, we could write a function that validates the `scoops` prop to make sure that it has at least one scoop, and has flavors that we actually have in our store. Give it a try if you're feeling adventurous! Be sure to check out the [PropTypes reference][reference on PropTypes] to guide you along the way.
 
 ## Resources
 - [PropTypes reference](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)
