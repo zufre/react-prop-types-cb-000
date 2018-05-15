@@ -84,7 +84,7 @@ Order.propTypes = {
 We just told our component to expect the `cone` prop to be a boolean. There are a couple of important things to note here:
  
 - Notice the capitalization: the property on the component class is always called `propTypes`, while the React prop types you assign to them are capitalized as `PropTypes`. This is easy to mess up, so if our propTypes don't validate, that's the first place we should look!
-- Some types are not called what you'd expect them to be: a boolean is `bool`, a function is `func`, and so on. Using the [reference on PropTypes](https://facebook.github.io/react/docs/reusable-components.html#prop-validation) is probably a good idea if you're just starting out with this stuff.
+- Some types are not called what you'd expect them to be: a boolean is `bool`, a function is `func`, and so on. Using the [reference on PropTypes][PropTypes reference] is probably a good idea if you're just starting out with this stuff.
 
 Let's add our second prop, the `size` one, which expects a string:
 
@@ -148,7 +148,7 @@ Order.propTypes = {
 Using the `shape` PropType, we can further validate our component's props to be even more specific, and to be _doubly_ sure that we're getting the right data. Great success!
 
 ## Advanced usage of PropTypes
-In this lesson, we've covered the basics of using PropTypes. There's much more validation you can do with it though, including writing your own prop validators. For example, we could write a function that validates the `scoops` prop to make sure that it has at least one scoop, and has flavors that we actually have in our store. Give it a try if you're feeling adventurous! Be sure to check out the [PropTypes reference][reference on PropTypes] to guide you along the way.
+In this lesson, we've covered the basics of using PropTypes. There's much more validation you can do with it though, including writing your own prop validators. For example, we could write a function that validates the `scoops` prop to make sure that it has at least one scoop, and has flavors that we actually have in our store. Give it a try if you're feeling adventurous! Be sure to check out the [reference on PropTypes][PropTypes reference] to guide you along the way.
 
 ## Resources
 - [PropTypes reference](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)
